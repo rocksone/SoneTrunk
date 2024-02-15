@@ -1,0 +1,66 @@
+SYSDBA
+admin oder masterkey
+MANDANT_ID  
+Admin : SYSDBA
+Pass  : R0ck#masterkey
+Pass    : SoNE#Max
+
+select $relation_name
+from rdb$relations
+where rdb$view_blr is null
+and (rdb$system_flag is null or rdb$system_flag = 0)
+order by 1;
+-------------------------------------
+## FB
+CHAR_TO_UUID (ascii_uuid)
+UUID_TO_CHAR()
+select gen_uuid() from rdb$database
+--------------------------------------
+StringToGUID
+  dm_DB.Q_UserUSER_ID.AsGuid := aCreateUser;
+var
+  Guid: TGUID;
+  Guid := DM_DB.Q_ProjectLUPROJECT_ID.AsGuid;
+--------------------------------------------------
+var
+  LConfig, aCreateUser: Tguid;
+  begin
+    System.TGUID.Empty
+    APP.SESS_Category_ID := Tguid.NewGuid;
+
+  FGUID : Tguid;
+
+------------------------------
+  MND_ID                := '31344445-3935-4533-4145-383134384339';  // Develop time
+  USR_ID                := '46354437-3134-3242-2D39-3931372D3439';  // Develop time
+------------------------------
+CONTACTTYPE   0 Mandant | 1 Client | 2 Vendor | 3 both
+CONTACTART  	0 Company | 1 Private
+PURPOSE       1 Sale | 2 Buy  | 3 both
+
+FFEEC358-BAFA-4170-8E27-DA5DEAFD777A
+59DE9948-0F47-4FFE-80B7-6F53AB0E6B36
+E697763B-A793-40C2-B047-C4FA4E033175
+FE2440AA-ED65-496B-BDA7-1131D6ED5ED9
+0E5B4897-EC10-4B55-8D4A-9E41395FBD62
+
+--------------------------------------------
+AS
+begin
+  if (new.category_id is null) then
+  begin
+    new.category_id = GEN_UUID ();
+  end
+end
+--
+AS
+begin
+    NEW.UPDATEDATE = CURRENT_TIMESTAMP;
+end
+
+A3537ADD-D550-4C19-B6A2-080B4968BB04
+E2F500A6-6336-4935-973D-FD2656456098
+5DD46066-0497-4269-8870-B4DFAC870995
+
+###################################################
+CONTACTTYPE:    0 Company | 1 Private

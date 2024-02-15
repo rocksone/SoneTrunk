@@ -1,0 +1,22 @@
+*.exe
+*.dll
+*.rar
+*.FDB
+*.dcu
+*.bak
+*.dsk
+*.lnk
+*.dsk
+*.~*
+Sone.identcache
+PROJECT/Sone.dproj
+Sone.dproj.local
+# Delphi history and backups
+__history/
+__recovery/
+
+
+
+
+
+DB/DB-Script/1.sql
